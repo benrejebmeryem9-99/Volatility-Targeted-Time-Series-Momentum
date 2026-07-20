@@ -161,7 +161,7 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 ## Wealth Curve
 
 <p align="center">
-<img src="results/figures/wealth_curves.png" width="850">
+<img src="results/wealth_curves.png" width="850">
 </p>
 
 ---
@@ -169,7 +169,7 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 ## Drawdown Comparison
 
 <p align="center">
-<img src="results/figures/drawdowns.png" width="850">
+<img src="results/drawdowns.png" width="850">
 </p>
 
 ---
@@ -177,7 +177,7 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 ## Portfolio Allocation
 
 <p align="center">
-<img src="results/figures/portfolio_weights.png" width="850">
+<img src="results/portfolio_weights.png" width="850">
 </p>
 
 ---
@@ -185,7 +185,7 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 ## Portfolio Volatility
 
 <p align="center">
-<img src="results/figures/portfolio_volatility.png" width="850">
+<img src="results/portfolio_volatility.png" width="850">
 </p>
 
 ---
