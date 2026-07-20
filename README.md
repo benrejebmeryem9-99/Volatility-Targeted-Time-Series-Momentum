@@ -23,6 +23,7 @@ Dynamic Risk Management • Time-Series Momentum • Portfolio Construction • 
 ![Open Source](https://img.shields.io/badge/Open%20Science-Reproducible-blueviolet?style=flat-square)
 
 </div>
+
 # Project Overview
 
 Volatility-targeted investing has become one of the most influential approaches to dynamic risk management in quantitative finance. Rather than maintaining constant portfolio exposure, volatility-targeted strategies continuously adjust leverage according to changing market conditions in an effort to stabilize portfolio risk.
