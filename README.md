@@ -1,10 +1,10 @@
 <div align="center">
 
-# Volatility-Targeted Time-Series Momentum
+# 📈 Volatility-Targeted Time-Series Momentum
 
 ### A Multi-Asset Quantitative Finance Research Project
 
-Dynamic Risk Management • Time-Series Momentum • Portfolio Construction • Open Science
+Dynamic Risk Management • Multi-Asset Portfolio Construction • Volatility Targeting • Reproducible Research
 
 <br>
 
@@ -16,64 +16,77 @@ Dynamic Risk Management • Time-Series Momentum • Portfolio Construction • 
 <br>
 
 ![Research](https://img.shields.io/badge/Research-Quantitative%20Finance-0055A4?style=flat-square)
-![Momentum](https://img.shields.io/badge/Strategy-Time--Series%20Momentum-success?style=flat-square)
+![Strategy](https://img.shields.io/badge/Strategy-Time--Series%20Momentum-success?style=flat-square)
 ![Risk](https://img.shields.io/badge/Risk-Volatility%20Targeting-red?style=flat-square)
 ![Portfolio](https://img.shields.io/badge/Portfolio-Multi--Asset-purple?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
-![Open Source](https://img.shields.io/badge/Open%20Science-Reproducible-blueviolet?style=flat-square)
 
 </div>
 
+---
+
 # Project Overview
 
-Volatility-targeted investing has become one of the most influential approaches to dynamic risk management in quantitative finance. Rather than maintaining constant portfolio exposure, volatility-targeted strategies continuously adjust leverage according to changing market conditions in an effort to stabilize portfolio risk.
+This project investigates the implementation of a **Volatility-Targeted Time-Series Momentum (VTM)** strategy across multiple asset classes. The objective is to evaluate whether combining momentum signals with dynamic volatility scaling can improve the risk-adjusted performance of a diversified investment portfolio.
 
-This project develops and evaluates a **Volatility-Targeted Time-Series Momentum (VTM)** strategy using a diversified portfolio of exchange-traded funds (ETFs) representing multiple asset classes. The complete framework progresses from a single-asset implementation to a diversified multi-asset portfolio before introducing **portfolio-level volatility targeting**.
+The framework progresses from a single-asset implementation to a diversified multi-asset portfolio before introducing **portfolio-level volatility targeting**. The entire project is implemented in Python using a modular architecture and includes automated unit tests and a fully reproducible Jupyter notebook.
 
-The project is fully implemented in **Python**, follows a modular software architecture, includes **unit tests**, and provides a fully reproducible research notebook.
+---
+
+# Table of Contents
+
+- Project Overview
+- Research Question
+- Methodology
+- Strategy Components
+- Asset Universe
+- Repository Structure
+- Results
+- Figures
+- Main Features
+- Technologies
+- Installation
+- References
+- License
 
 ---
 
 # Research Question
 
-> **Can portfolio-level volatility targeting improve the risk-adjusted performance of a diversified time-series momentum strategy compared with a conventional momentum portfolio?**
+> Can portfolio-level volatility targeting improve the risk-adjusted performance of a diversified time-series momentum strategy compared with a conventional momentum portfolio?
 
 ---
 
 # Methodology
 
-The complete strategy follows the workflow below.
-
 ```text
 Historical Market Data
-          │
-          ▼
- Daily Return Calculation
-          │
-          ▼
- Momentum Signal Generation
-          │
-          ▼
- Rolling Volatility Estimation
-          │
-          ▼
- Position Scaling
-          │
-          ▼
- Multi-Asset Portfolio Construction
-          │
-          ▼
- Portfolio-Level Volatility Targeting
-          │
-          ▼
- Performance Evaluation
+        │
+        ▼
+Daily Return Calculation
+        │
+        ▼
+Momentum Signal Generation
+        │
+        ▼
+Rolling Volatility Estimation
+        │
+        ▼
+Position Scaling
+        │
+        ▼
+Multi-Asset Portfolio Construction
+        │
+        ▼
+Portfolio-Level Volatility Targeting
+        │
+        ▼
+Performance Evaluation
 ```
 
 ---
 
 # Strategy Components
-
-The framework consists of the following modules:
 
 - Historical market data collection
 - Daily return calculation
@@ -85,20 +98,18 @@ The framework consists of the following modules:
 - Multi-asset portfolio construction
 - Portfolio-level volatility targeting
 - Performance evaluation
-- Robustness analysis
+- Sensitivity analysis
 
 ---
 
 # Asset Universe
-
-The strategy is evaluated across six representative ETFs covering multiple asset classes.
 
 | ETF | Asset Class |
 |------|-------------|
 | SPY | U.S. Equities |
 | QQQ | Technology Equities |
 | GLD | Gold |
-| TLT | Long-Term U.S. Treasury Bonds |
+| TLT | U.S. Treasury Bonds |
 | DBC | Commodities |
 | VNQ | Real Estate |
 
@@ -110,36 +121,10 @@ The strategy is evaluated across six representative ETFs covering multiple asset
 Volatility-Targeted-Time-Series-Momentum/
 
 ├── data/
-│   ├── raw/
-│   └── processed/
-│
 ├── notebooks/
-│   ├── 01_Analysis.ipynb
-│   └── 02_Main_Backtest.ipynb
-│
 ├── results/
-│   ├── figures/
-│   ├── performance_metrics.csv
-│   ├── multi_asset_metrics.csv
-│   ├── portfolio_metrics.csv
-│   └── portfolio_weights.csv
-│
 ├── src/
-│   ├── backtest.py
-│   ├── data_loader.py
-│   ├── experiments.py
-│   ├── metrics.py
-│   ├── multi_asset.py
-│   ├── signals.py
-│   ├── visualization.py
-│   └── volatility.py
-│
 ├── tests/
-│   ├── test_backtest.py
-│   ├── test_metrics.py
-│   ├── test_no_lookahead.py
-│   └── test_volatility.py
-│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -147,16 +132,27 @@ Volatility-Targeted-Time-Series-Momentum/
 
 ---
 
-# Key Results
+# Results
 
-The study compares:
+The framework evaluates four investment strategies:
 
 - Buy-and-Hold
-- Single-Asset Momentum Strategy
+- Single-Asset Momentum
 - Diversified Multi-Asset Portfolio
 - Portfolio-Level Volatility Targeting
 
-Portfolio-level volatility targeting improved the overall risk-adjusted performance by restoring the portfolio to the desired **10% annualized volatility target**, increasing annualized return while improving the Sharpe, Sortino and Calmar ratios.
+Portfolio-level volatility targeting successfully restored the portfolio to the desired annualized volatility target while improving the overall risk-adjusted performance.
+
+## Performance Summary
+
+| Strategy | CAGR | Volatility | Sharpe |
+|-----------|------:|-----------:|--------:|
+| Buy & Hold | ... | ... | ... |
+| Single-Asset Momentum | ... | ... | ... |
+| Multi-Asset Portfolio | 2.52% | 5.89% | 0.452 |
+| Portfolio Volatility Targeting | 4.76% | 10.16% | 0.509 |
+
+*(Update the values with your final results.)*
 
 ---
 
@@ -165,7 +161,7 @@ Portfolio-level volatility targeting improved the overall risk-adjusted performa
 ## Wealth Curve
 
 <p align="center">
-<img src="results/wealth_curves.png" width="850">
+<img src="results/figures/wealth_curves.png" width="850">
 </p>
 
 ---
@@ -173,33 +169,36 @@ Portfolio-level volatility targeting improved the overall risk-adjusted performa
 ## Drawdown Comparison
 
 <p align="center">
-<img src="results/drawdowns.png" width="850">
+<img src="results/figures/drawdowns.png" width="850">
 </p>
 
 ---
 
 ## Portfolio Allocation
 
-*(Generated in the notebook.)*
+<p align="center">
+<img src="results/figures/portfolio_weights.png" width="850">
+</p>
 
 ---
 
 ## Portfolio Volatility
 
-*(Generated in the notebook.)*
+<p align="center">
+<img src="results/figures/portfolio_volatility.png" width="850">
+</p>
 
 ---
 
 # Main Features
 
 - Modular Python implementation
-- Fully reproducible research notebook
 - Multi-asset portfolio construction
 - Portfolio-level volatility targeting
 - Transaction cost modelling
-- Unit testing
-- Professional visualization
-- Clean software architecture
+- Automated unit tests
+- Reproducible Jupyter notebook
+- Performance evaluation using standard financial metrics
 
 ---
 
@@ -216,23 +215,31 @@ Portfolio-level volatility targeting improved the overall risk-adjusted performa
 
 # Installation
 
-Clone the repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/benrejebmeryem9-99/Volatility-Targeted-Time-Series-Momentum.git
 ```
 
-Install the required packages:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the main notebook:
+Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open
 
 ```text
 notebooks/02_Main_Backtest.ipynb
 ```
+
+and run all cells to reproduce the analysis.
 
 ---
 
@@ -244,8 +251,6 @@ notebooks/02_Main_Backtest.ipynb
 - Hurst, B., Ooi, Y., & Pedersen, L. (2017). *A Century of Evidence on Trend-Following Investing*.
 
 ---
-
-
 
 # License
 
