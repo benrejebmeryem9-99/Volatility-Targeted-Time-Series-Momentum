@@ -174,21 +174,6 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 
 ---
 
-## Portfolio Allocation
-
-<p align="center">
-<img src="results/portfolio_weights.png" width="850">
-</p>
-
----
-
-## Portfolio Volatility
-
-<p align="center">
-<img src="results/portfolio_volatility.png" width="850">
-</p>
-
----
 
 # Main Features
 
