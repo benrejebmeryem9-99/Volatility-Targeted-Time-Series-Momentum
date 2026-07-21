@@ -151,7 +151,6 @@ Portfolio-level volatility targeting successfully restored the portfolio to the 
 | Volatility-Targeted Momentum (SPY) | **5.72%** | **11.13%** | **0.555** |
 | Multi-Asset Portfolio | **2.52%** | **5.89%** | **0.452** |
 | 10% Targeted Portfolio | **4.76%** | **10.16%** | **0.509** |
-*(Update the values with your final results.)*
 
 ---
 
